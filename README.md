@@ -163,5 +163,5 @@ Integration with Social Platforms
 Main Network Launch
 
 Conclusion
-MediaChain represents a significant evolution in blockchain systems, integrating social impact into the transaction validation process.
+Engage represents a significant evolution in blockchain systems, integrating social impact into the transaction validation process.
 Disclaimer: This white paper is an initial concept and will require further technical research and development.
