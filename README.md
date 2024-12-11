@@ -1,5 +1,5 @@
 # Engageai
-A new social protocol for validate transaction
+Validate transaction with engagement commit
 # MediaChain: Revolutionizing Blockchain Validation through Social Engagement
 
 ## Abstract
