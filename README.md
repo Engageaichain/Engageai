@@ -139,15 +139,39 @@ impl ConsensusProtocol for MediaChainNode {
 
 ## 5. Visual Process Breakdown
 
-<antArtifact identifier="mediachain-workflow" type="application/vnd.ant.mermaid" title="MediaChain Validation Workflow">
 flowchart TD
-    A[Transaction Initiated] --> B[Social Propagation]
-    B --> C{Engagement Analysis}
-    C --> |Likes/Shares| D[Quantitative Scoring]
-    C --> |Comments/Sentiment| E[Qualitative Assessment]
-    D --> F[Geographical Distribution Check]
-    E --> F
-    F --> G{Validation Threshold Met?}
-    G --> |Yes| H[Transaction Confirmed]
-    G --> |No| I[Transaction Rejected]
-    H --> J[Added to Blockchain]
+    A[Transaction Initiated] -->|User Submits Transaction| B{Multiplatform Propagation}
+    B -->|Social Media Channels| C[Content Distribution]
+    
+    subgraph "Engagement Analysis"
+    D1[Comment Validation]
+    D2[Like Validation]
+    D3[Share Validation]
+    end
+    
+    C --> D1
+    C --> D2
+    C --> D3
+    
+    D1 --> E{Engagement Scoring}
+    D2 --> E
+    D3 --> E
+    
+    E -->|Calculate Weighted Score| F[Qualitative & Quantitative Assessment]
+    
+    F --> G{Validation Threshold}
+    G -->|Score > Threshold| H[Transaction Approved]
+    G -->|Score < Threshold| I[Transaction Rejected]
+    
+    H --> J[Add to Blockchain]
+    I --> K[Return to Sender]
+    
+    style A fill:#4A90E2,color:white
+    style B fill:#6A11CB,color:white
+    style C fill:#4A90E2,color:white
+    style E fill:#6A11CB,color:white
+    style G fill:#4A90E2,color:white
+    style H fill:green,color:white
+    style I fill:red,color:white
+    style J fill:lightgreen,color:black
+    style K fill:lightcoral,color:black
