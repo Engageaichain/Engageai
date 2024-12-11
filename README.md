@@ -1,6 +1,6 @@
 # Engageai
 Validate transaction with engagement commit
-# MediaChain: Revolutionizing Blockchain Validation through Social Engagement
+# EnagageAI: Revolutionizing Blockchain Validation through Social Engagement
 
 ## Abstract
 
@@ -18,7 +18,7 @@ Existing blockchain technologies primarily rely on:
   - Concentrates power among wealthy participants
   - Creates potential centralization risks
 
-### 1.2 MediaChain's Innovative Approach
+### 1.2 Engage's Innovative Approach
 
 MediaChain proposes a revolutionary consensus model:
 - **Engagement-Validated Consensus (EVC)**
@@ -89,7 +89,20 @@ Our proprietary algorithm evaluates transactions through multiple dimensions:
 - Multifactor authentication of social accounts
 - Dynamic scoring thresholds
 
-## 3. Implementation Details
+## 3. Rust Implementation Details
+
+// Basic structure for transaction validation
+struct MediaTransaction {
+    id: Hash,
+    data: Vec<u8>,
+    social_engagement: SocialEngagementScore,
+}
+
+// Trait for engagement calculation
+trait EngagementValidator {
+    fn calculate_engagement_score(&self) -> f64;
+    fn is_transaction_valid(&self) -> bool;
+}
 
 ### 3.1 Network Architecture
 
@@ -136,3 +149,19 @@ impl ConsensusProtocol for MediaChainNode {
    - Authentic news verification
    - Intellectual property tracking
    - Content creator reputation systems
+   - Prevention of engagement manipulation
+   - Anti-spam algorithms
+   - Quality assessment of engagement
+
+5. Roadmap and Future Development
+Development Phases
+
+Network Prototype
+Consensus Mechanism Implementation
+Scalability Testing
+Integration with Social Platforms
+Main Network Launch
+
+Conclusion
+MediaChain represents a significant evolution in blockchain systems, integrating social impact into the transaction validation process.
+Disclaimer: This white paper is an initial concept and will require further technical research and development.
